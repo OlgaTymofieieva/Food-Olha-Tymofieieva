@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+
+}
+
+
+
+form {
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 60px 80px 60px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+
+
+}
+
+form h2 {
+    font-size: 1.25em;
+    margin-bottom: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    color: #111;
+
+}
+
+.inputBox {
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.inputBox input {
+
+
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #bdb7b7;
+    outline: none;
+    color: #111;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #bdb7b7;
+    text-transform: uppercase;
+}
+
+.inputBox input:focus,
+.inputBox input:valid {
+    border-color: #ff0157;
+
+}
+
+.inputBox input:focus~label,
+.inputBox input:valid~label {
+    color: #ff0157;
+    letter-spacing: 0.15rem;
+    transform: translateY(-25px);
+
+}
+
+.inputBox input[type="submit"] {
+    background: #ff0157;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.inputBox input[type="submit"]:hover {
+    letter-spacing: 0.35em;
+}
+
+form p a {
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
